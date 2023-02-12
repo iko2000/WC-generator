@@ -1,0 +1,186 @@
+@font-face {
+    font-family: Poppins;
+    src: url("../Fonts/Poppins-Light.ttf");
+}
+@font-face {
+    font-family: FiraGO;
+    src: url("../Fonts/FiraGO-Medium.ttf");
+}
+body {
+    background-image: url("../Pics/World-Cup.jpg");
+}
+header, nav, ul {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    border-bottom: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style:  none;
+    margin-left: 25px;
+    font-size: 25px;
+    font-family: Poppins;
+
+}
+
+section {
+     width: 100%;
+     height: 33rem;
+     display: grid;
+     place-items: center;
+}
+.mainbox {
+    border: 1px solid black;
+    width: 40%;
+    height: 80%;
+    display: block;
+    background-image: url("../Pics/istockphoto-523631979-612x612.jpg");
+    background-repeat: repeat;
+}
+.mainbox div {
+    width: 100%;
+    height: 33%;
+}
+
+#enter-floor {
+    display: grid;
+    place-items: center;
+    height: 45%;
+}
+#welcome-floor {
+  height: 10%;
+}
+
+#anser-floor {
+    height: 40%;
+}
+h2 {
+    font-size: 25px;
+    text-align: center;
+    font-family: Poppins;
+
+}
+h3 {
+    text-align: center;
+    font-size: 20px;
+    font-family: Poppins;
+
+}
+input {
+    width: 50%;
+    height: 60%;
+}
+p {
+    font-size: 40px;
+    text-align: center;
+    font-family: FiraGO;
+
+
+}
+button {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+}
+#refresh {
+    background-color: red;
+    margin-top: 10px;
+}
+
+
+/* Styling of Contact us page */
+
+.wrapper {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.wrapper div {
+    transition: 1.5s
+}
+.wrapper div:hover {
+    scale: 1.2;
+}
+
+.child-1 {
+    width: 25%;
+    height: 100%;
+}
+
+.child-2 {
+    width: 25%;
+    height: 100%;
+}
+
+.child-3 {
+    width: 25%;
+    height: 100%;
+}
+
+img {
+    width: 90%;
+    height: 65%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.contactus-p {
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1, h2  {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    p {
+        font-size: 30px;
+    }
+    li {
+        font-size: 18px;
+        border-bottom: 1px solid black;
+        margin-left: 0px;
+    }
+    header {
+        height: 5rem;
+    }
+    ul {
+        display: grid;  
+    }
+    nav {
+        border: none;
+    }
+    button {
+        height: 30px;
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .mainbox {
+        width: 100%;
+        height: 90%;
+    }
+    .wrapper {
+        display: block;
+    }
+    .wrapper div {
+        width: 100%;
+        height: 33%;
+        margin-bottom: 35px;
+    }
+    section {
+        height: 30rem;
+        margin-top: 50px;
+    }
+  }

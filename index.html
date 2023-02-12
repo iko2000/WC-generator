@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/CSS/reset.css">
+    <link rel="stylesheet" href="./static/CSS/style.css">
+    <title>Home page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html" >Home</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+                <li><a href="https://www.fifa.com/fifaplus/en/tournaments/mens/worldcup/qatar2022" target="_blank" >More about WC</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+          <div class="mainbox"> 
+            <div id="welcome-floor"> 
+                <h2> Welcome to WC winner Generator</h2>
+            </div>
+            <div id="enter-floor"> 
+                <h3> Enter desired Year to generate answer : </h3>
+                <input type="number" id="user"  min="1930" max="2022" value="1930" >
+                <button type="submit" onclick="entered()" > Generate Champion </button>
+                <button id="refresh" type="refresh" onclick="refresh()">Refresh Action </button>
+            </div>
+            <div id="answer-floor"> 
+                <p id="generate"></p>
+            </div>
+          </div>
+        </section>
+    </main>
+    <script src="./index.js">
+        
+    </script>
+</body>
+</html>
